@@ -3,16 +3,6 @@ var router = express.Router();
 
 /* GET home page. */
 
-router.get('/info', function(req, res, next) {
-    var options = {
-        navitems: [
-            {link: "#def", content: "Tanımları"}
-        ],
-        title: "Nüfus ile İlgili Bilgiler"
-    };
-    res.render("info", options);
-});
-
 router.get('/change', function(req, res, next) {
     var options = {
         navitems: [
