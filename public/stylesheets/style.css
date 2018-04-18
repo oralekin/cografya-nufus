@@ -110,11 +110,23 @@ div.main-text {
 }
 
 div.see-more {
-    align-self: right;
-    background-image: url("/public/images/arrow_outline_green_right.png");
+    float: right;
+    background-image: url("/images/arrow_outline_green_right.png");
+    background-size: 100% 100%;
     align-content: center;
+    vertical-align: center;
+    display: block;
+    height: 50px;
+    width: 150px;
 }
 
 .see-more a {
+    text-decoration-line: none;
+    color: red;
+    alignment: center;
+    position: relative;
+    padding-left: 5px;
+    top: 35%;
+    transform: translateY(-65%);
 
 }

@@ -13,4 +13,8 @@ html
     ul.navbar
       for navitem in navitems
         +navlink(navitem.content, navitem.link)
-    block content
+    a(href="/")
+      .banner#banner
+        h1 Nüfus ile ilgili Bilgiler
+    .main-text
+      block content

@@ -1,9 +1,6 @@
 extends layout
 
 block content
-  .banner#banner
-    h1 Nüfus ile ilgili Bilgiler
-  div.main-text
     .text#info
       h2 Nüfus Nedir?
       p.
@@ -21,11 +18,20 @@ block content
 
       p Britannica'nın da bahsettiği üzere, nüfus, insanların değişen sayısıdır. Nüfusu incelerken, değişim gözardı edilemez bir gerçektir, nüfus analizleri ise durağan veriler değil zamanla gerçekleşen değişimler üzerinden yapılır.
 
-      h3 Nüfus Sayımı
-      p Nüfus sayımları, devletler tarafından ülkelerin nüfusunu belirlemek için yapılan sayımlardır. Bu sayımlarda nüfus sayısı yanında nüfusun eğitim seviyesi, dağılımı ve yaş özellikleri de belirlenir
+      div.see-more#cmore-info
+        a(href="/info") Daha fazla okuyun
 
-      p Ülkemizde nüfus sayımları, Türkiye İstatistik Kurumu (TÜİK) tarafından periyodik olarak yapılmaktadır.
+    .text#inc
+      h2 Nüfus Artışı ve Azalışı Nedir?
+      p.
+        Nüfus artışı ve azalışı, nüfusun değişimine denir. Encyclopedia Brittanica'ya göre nüfus kavramı, nüfus artış ve azalışından ayrı şekilde bulunamaz.
+      div.see-more#cmore-inc
+        a(href="/change") Daha fazla okuyun
 
 
-
-
+    .text#dist
+      h2 Nüfus Dağılımı Nedir?
+      p.
+        Nüfus artışı ve azalışı, nüfusun değişimine denir. Encyclopedia Brittanica'ya göre nüfus kavramı, nüfus artış ve azalışından ayrı şekilde bulunamaz.
+      div.see-more#cmore-dist
+        a(href="/distribution") Daha fazla okuyun
