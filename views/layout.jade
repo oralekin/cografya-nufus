@@ -1,0 +1,16 @@
+doctype html
+
+
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    mixin navlink(content, link)
+      li
+        a(href="#{link}")= content
+
+  body
+    ul.navbar
+      for navitem in navitems
+        +navlink(navitem.content, navitem.link)
+    block content
