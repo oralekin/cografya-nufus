@@ -2,18 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  var options = {
-    navitems: [
-      { content: "Nüfus nedir", link: "#info" },
-      { content: "Nüfus Artışı", link: "#inc" },
-      { content: "Dünyadaki nüfus dağılımı", link: "#world-dist" }, 
-      { content: "Nüfus yaş dağılımı", link: "#demographic" }
-    ],
-    title: "Nüfus ile İlgili Bilgiler"
-  };
-  res.render("index", options);
-});
 
 router.get('/info', function(req, res, next) {
     var options = {
@@ -35,6 +23,18 @@ router.get('/change', function(req, res, next) {
     res.render("change", options);
 });
 
+router.get('/', function(req, res, next) {
+    var options = {
+        navitems: [
+            { content: "Nüfus nedir", link: "#info" },
+            { content: "Nüfus Artışı", link: "#inc" },
+            { content: "Dünyadaki nüfus dağılımı", link: "#world-dist" },
+            { content: "Nüfus yaş dağılımı", link: "#demographic" }
+        ],
+        title: "Nüfus ile İlgili Bilgiler"
+    };
+    res.render("index", options);
+});
 
 
 module.exports = router;
