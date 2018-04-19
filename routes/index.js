@@ -25,7 +25,7 @@ router.get('/distribution', function(req, res, next) {
         ],
         title: "Nüfus Dağılımı"
     };
-    res.render("change", options);
+    res.render("distribution", options);
 });
 
 router.get('/', function(req, res, next) {
@@ -46,7 +46,7 @@ router.get('/about', function (req, res, next) {
         navitems: [
             { content: "Kaynakça", link: "#ref" }
         ],
-        title: "Nüfus ile ilgili bilgiler"
+        title: "Site ile ilgili bilgiler"
     };
     res.render("about", options);
 });
