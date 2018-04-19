@@ -6,9 +6,24 @@ var router = express.Router();
 router.get('/change', function(req, res, next) {
     var options = {
         navitems: [
-            {link: "#def", content: "Tanımları"}
+            {link: "#dec", content: "Azalış"},
+            {link: "#dec-reas", content: "Neden-Sonuçları"},
+            {link: "#inc", content: "Artış"},
+            {link: "#inc-reas", content: "Neden-Sonuçları"}
         ],
-        title: "Nüfus ile İlgili Bilgiler"
+        title: "Nüfus Artış ve Azalışı"
+    };
+    res.render("change", options);
+});
+
+router.get('/distribution', function(req, res, next) {
+    var options = {
+        navitems: [
+            {link: "#why", content: "Neden?"},
+            {link: "#low", content: "Az olan yerler"},
+            {link: "#high", content: "Çok olan yerler"}
+        ],
+        title: "Nüfus Dağılımı"
     };
     res.render("change", options);
 });
@@ -18,12 +33,22 @@ router.get('/', function(req, res, next) {
         navitems: [
             { content: "Nüfus nedir", link: "#info" },
             { content: "Nüfus Artışı", link: "#inc" },
-            { content: "Dünyadaki nüfus dağılımı", link: "#world-dist" },
-            { content: "Nüfus yaş dağılımı", link: "#demographic" }
+            { content: "Dünyadaki nüfus dağılımı", link: "#dist" },
+            { content: "Site Hakkında", link: "#about"}
         ],
-        title: "Nüfus ile İlgili Bilgiler"
+        title: "Nüfus ile ilgili bilgiler"
     };
     res.render("index", options);
+});
+
+router.get('/about', function (req, res, next) {
+    var options = {
+        navitems: [
+            { content: "Yapım süreci", link: "#" }
+        ],
+        title: "Nüfus ile ilgili bilgiler"
+    };
+    res.render("about", options);
 });
 
 
