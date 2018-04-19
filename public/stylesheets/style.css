@@ -114,7 +114,6 @@ div.see-more {
     background-image: url("/images/arrow_outline_green_right.png");
     background-size: 100% 100%;
     align-content: center;
-    vertical-align: center;
     height: 60px;
     width: fit-content;
     padding-right: 20px;
@@ -142,4 +141,12 @@ div.see-more {
 
 #ref li {
 
+}
+
+.inline-img {
+    height: 200px;
+    display: inline-block;
+    padding: 3px;
+}.right {
+    float: right
 }

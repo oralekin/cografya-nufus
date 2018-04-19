@@ -12,11 +12,11 @@ html
     script(src="/javascripts/scroll.js")
 
   body
-    ul.navbar
-      for navitem in navitems
-        +navlink(navitem.content, navitem.link)
     a(href="/")
       .banner#banner
         h1 Nüfus ile ilgili Bilgiler
+    ul.navbar
+      for navitem in navitems
+        +navlink(navitem.content, navitem.link)
     .main-text
       block content
