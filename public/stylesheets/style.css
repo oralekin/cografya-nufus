@@ -114,8 +114,8 @@ div.see-more {
     align-content: center;
     vertical-align: center;
     display: block;
-    height: 50px;
-    width: 150px;
+    height: 55px;
+    width: fit-content;
 }
 
 .see-more a {
