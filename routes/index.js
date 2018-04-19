@@ -44,7 +44,7 @@ router.get('/', function(req, res, next) {
 router.get('/about', function (req, res, next) {
     var options = {
         navitems: [
-            { content: "Yapım süreci", link: "#" }
+            { content: "Kaynakça", link: "#ref" }
         ],
         title: "Nüfus ile ilgili bilgiler"
     };
