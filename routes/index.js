@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
         navitems: [
             { content: "Nüfus nedir", link: "#info" },
             { content: "Nüfus Artışı", link: "#inc" },
-            { content: "Dünyadaki nüfus dağılımı", link: "#dist" },
+            { content: "Nüfus dağılımı", link: "#dist" },
             { content: "Site Hakkında", link: "#about"}
         ],
         title: "Nüfus ile ilgili bilgiler"

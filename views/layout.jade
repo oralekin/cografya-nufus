@@ -16,6 +16,9 @@ html
       .banner#banner
         h1 Nüfus ile ilgili Bilgiler
     ul.navbar
+      - if(title!="Nüfusla ilgili bilgiler") {
+        +navlink("Başlangıca dön")
+      - }
       for navitem in navitems
         +navlink(navitem.content, navitem.link)
     .main-text
