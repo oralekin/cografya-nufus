@@ -6,10 +6,9 @@ var router = express.Router();
 router.get('/change', function(req, res, next) {
     var options = {
         navitems: [
-            {link: "#dec", content: "Azalış"},
-            {link: "#dec-reas", content: "Neden-Sonuçları"},
-            {link: "#inc", content: "Artış"},
-            {link: "#inc-reas", content: "Neden-Sonuçları"}
+            {link: "#def", content: "Nedir"},
+            {link: "#nat", content: "Doğal Nüfus değişiklikleri"},
+            {link: "#imm", content: "Göçler"},
         ],
         title: "Nüfus Artış ve Azalışı"
     };
@@ -19,7 +18,7 @@ router.get('/change', function(req, res, next) {
 router.get('/distribution', function(req, res, next) {
     var options = {
         navitems: [
-            {link: "#why", content: "Neden?"},
+            {link: "#why", content: "Nelere göre olur?"},
             {link: "#low", content: "Az olan yerler"},
             {link: "#high", content: "Çok olan yerler"}
         ],
@@ -44,7 +43,9 @@ router.get('/', function(req, res, next) {
 router.get('/about', function (req, res, next) {
     var options = {
         navitems: [
-            { content: "Kaynakça", link: "#ref" }
+            { content: "Hakkında", link: "#about"},
+            { content: "Kaynakça", link: "#ref" },
+            { content: "Teknik Detaylar", link:"#tech"}
         ],
         title: "Site ile ilgili bilgiler"
     };
