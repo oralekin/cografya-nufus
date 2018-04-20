@@ -1,12 +1,6 @@
 extends layout
 
 block content
-	.text#about
-		h2 Web Sitesi hakkında
-
-		p.
-			daha sonra tamamlanacak
-
 	.text#ref
 		h2 Kaynakça
 
@@ -17,5 +11,9 @@ block content
 			“Glossary:Population Change.” Glossary:Population Change - Statistics Explained, Eurostat, 10 Dec. 2014, #[a(href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Population_change") #{"ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Population_change"} ].
 
 	.text#tech
-		h2 Teknik detaylar
-
+		h2 Teknik detaylar	
+		p.
+			Bu web sitesi, Node.js Electron server uygulaması kullanılarak Jade (Pug) ve CSS teknolojileriyle yaratılmıştır. Web sitesinin içeriği Creative Commons Attribution 4.0 International lisansına, web server uyuglaması ise MIT lisansına tabidir.
+			Web sitesinin ana kodu ve içerikleri #[a(href="https://github.com/oralekin/cografya-nufus") GitHub sayfasında bulunabilir].
+		p.
+			Uygulama şuan Heroku Node.js hosting üzerinde çalışmaktadır, ancak ileride cografya.oralek.in/ üzerinden kullanıma açılması planlanmaktadır.
